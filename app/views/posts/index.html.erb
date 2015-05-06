@@ -5,6 +5,9 @@
     <div class="tagline" title="<%= post.created_at %>">
       <%= time_ago_in_words post.created_at %> ago
     </div>
+    <ul class="actions">
+      <li><%= link_to 'edit', edit_post_path(post) %></li>
+    </ul>
   </li>
 <% end %>
 </ul>
