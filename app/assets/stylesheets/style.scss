@@ -106,3 +106,10 @@ footer {
   font-size: smaller;
   text-align: center;
 }
+
+div.field_with_errors {
+  display: inline;
+  label {
+    color: red;
+  }
+}
