@@ -20,19 +20,19 @@
     <div class="row">
       <div class="col-xs-8">
         <main>
-          <div class="well">
-            <% flash.each do |name, msg| %>
-              <% if msg.is_a? Array %>
+          <% flash.each do |name, msg| %>
+            <% if msg.is_a? Array %>
+              <div class="alert <%= flash_class name %>">
                 <ul>
                   <% msg.each do |message| %>
                     <li><%= message %></li>
                   <% end %>
                 </ul>
-              <% else %>
-                <%= content_tag :div, msg, class: name %>
-              <% end %>
+              </div>
+            <% else %>
+              <%= content_tag :div, msg, class: "alert #{flash_class name}" %>
             <% end %>
-          </div>
+          <% end %>
           <!-- BEGIN main content -->
           <%= yield %>
           <!-- END main content -->
