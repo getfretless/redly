@@ -6,4 +6,6 @@ class Post < ActiveRecord::Base
   validates :body, presence: true, if: :text?
   validates :category_id, presence: true
   enum post_type: [:link, :text]
+
+  self.per_page = 4
 end

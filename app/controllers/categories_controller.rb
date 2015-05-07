@@ -2,6 +2,7 @@ class CategoriesController < ApplicationController
   before_action :find_category, only: [:show]
 
   def show
+    @posts = @category.posts.page(params[:page])
   end
 
   def new
@@ -25,6 +26,6 @@ class CategoriesController < ApplicationController
   end
 
   def find_category
-    @category = Category.find params[:id]
+    @category = Category.includes(:posts).find(params[:id])
   end
 end
