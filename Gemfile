@@ -6,6 +6,7 @@ gem 'pry-rails', group: [:development, :test]
 gem 'bootstrap-sass'
 gem 'will_paginate'
 gem 'devise'
+gem 'acts_as_commentable_with_threading'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

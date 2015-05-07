@@ -8,5 +8,7 @@ class Post < ActiveRecord::Base
   validates :category_id, presence: true
   enum post_type: [:link, :text]
 
+  acts_as_commentable
+
   self.per_page = 4
 end
