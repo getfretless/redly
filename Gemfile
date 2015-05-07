@@ -5,6 +5,7 @@ gem 'rails_12factor', group: :production
 gem 'pry-rails', group: [:development, :test]
 gem 'bootstrap-sass'
 gem 'will_paginate'
+gem 'devise'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
