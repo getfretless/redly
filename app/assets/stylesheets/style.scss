@@ -305,3 +305,12 @@ nav#categories {
   border-top-left-radius: 7px;
   font-size: x-small;
 }
+
+form.comment {
+  fieldset {
+    background-color: transparent;
+    label {
+      font-size: small;
+    }
+  }
+}

@@ -9,6 +9,4 @@ class Post < ActiveRecord::Base
   enum post_type: [:link, :text]
 
   acts_as_commentable
-
-  self.per_page = 4
 end
